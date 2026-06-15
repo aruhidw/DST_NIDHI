@@ -55,7 +55,7 @@ const DSTStories = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-3xl shadow-2xl">
 
-            {/* Slides */}
+        
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
@@ -79,7 +79,7 @@ const DSTStories = () => {
               ))}
             </div>
 
-            {/* Prev Button */}
+          
             <button
               onClick={prevSlide}
               className="
@@ -104,7 +104,7 @@ const DSTStories = () => {
               ❮
             </button>
 
-            {/* Next Button */}
+         
             <button
               onClick={nextSlide}
               className="

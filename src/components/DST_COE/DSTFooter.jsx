@@ -10,12 +10,9 @@ import { ChevronRight } from "lucide-react";
 const DSTFooter = () => {
   return (
     <footer className="bg-[#081B33] text-white">
-      {/* MAIN FOOTER */}
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-12 lg:py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
-          {/* LEFT */}
           <div>
-            {/* BROCHURE BUTTON */}
             <div className="mb-8">
               <a
                 href="/DST/Medtech_Brochure.pdf"
@@ -47,7 +44,6 @@ const DSTFooter = () => {
               </a>
             </div>
 
-            {/* QUICK LINKS */}
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-5">
                 Quick Links
@@ -89,7 +85,6 @@ const DSTFooter = () => {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="flex flex-col justify-between">
             <div>
               <p
@@ -123,9 +118,7 @@ const DSTFooter = () => {
                 medtech.coe@iitkfirst.com
               </a>
 
-              {/* SOCIAL ICONS */}
               <div className="flex items-center gap-4 mt-5">
-                {/* FACEBOOK */}
                 <a
                   href="https://www.facebook.com/IncubatorIITK/"
                   target="_blank"
@@ -153,7 +146,6 @@ const DSTFooter = () => {
                   <FaFacebookF size={18} />
                 </a>
 
-                {/* YOUTUBE */}
                 <a
                   href="https://www.youtube.com/channel/UCrbWiYfjO4s0LrzISmcM_8g"
                   target="_blank"
@@ -181,7 +173,6 @@ const DSTFooter = () => {
                   <FaYoutube size={18} />
                 </a>
 
-                {/* INSTAGRAM */}
                 <a
                   href="https://www.instagram.com/incubatoriitk/"
                   target="_blank"
@@ -215,7 +206,6 @@ const DSTFooter = () => {
                   <FaInstagram size={18} />
                 </a>
 
-                {/* LINKEDIN */}
                 <a
                   href="https://www.linkedin.com/company/incubatoriitk"
                   target="_blank"
@@ -248,7 +238,6 @@ const DSTFooter = () => {
         </div>
       </div>
 
-      {/* COPYRIGHT */}
       <div
         className="
           border-t border-white/10

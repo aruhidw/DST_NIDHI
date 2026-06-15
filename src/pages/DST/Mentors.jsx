@@ -234,12 +234,12 @@ const Mentor = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {mentorSections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="mb-16">
-            {/* SECTION TITLE */}
+            
             <h2 className="text-3xl font-bold text-slate-900 mb-8 border-l-4 border-blue-600 pl-4">
               {section.department}
             </h2>
 
-            {/* CARDS */}
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {section.mentors.map((mentor, index) => (
                 <div
@@ -261,7 +261,7 @@ const Mentor = () => {
                   "
                 >
                   <div>
-                    {/* NAME */}
+                   
                     <a
                       href={mentor.profile}
                       target="_blank"
@@ -278,7 +278,7 @@ const Mentor = () => {
                       {mentor.name}
                     </a>
 
-                    {/* ROLE */}
+                    
                     <p
                       className="
                         mt-4
@@ -291,7 +291,7 @@ const Mentor = () => {
                     </p>
                   </div>
 
-                  {/* EMAIL */}
+                  
                   <a
                     href={`mailto:${mentor.email}`}
                     className="

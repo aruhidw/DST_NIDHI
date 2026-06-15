@@ -15,19 +15,19 @@ const PageBanner = ({
         overflow-hidden
       "
     >
-      {/* IMAGE */}
+     
       <img
         src={image}
         alt={title}
         className="w-full h-full object-cover"
       />
 
-      {/* OVERLAY */}
+      
       <div
         className={`absolute inset-0 ${className}`}
       ></div>
 
-      {/* TITLE */}
+     
       <div className="absolute inset-0 flex items-center justify-center">
         <h1
           className="

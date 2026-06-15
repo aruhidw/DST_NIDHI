@@ -63,8 +63,7 @@ const facilities = [
     title: "Advanced Centre for Material Science",
     description:
       "The Advanced Centre for Materials Science was created in 1978 with a view to make available major materials preparation and characterization facilities under one-roof. These state-of-the-art research facilities are regularly upgraded and are maintained by suitably trained competent staff. The Centre has been serving the needs of the materials community from the institute as well as other academic and industrial establishments for over thirty-five years.",
-    image:
-      "/DST/Facilities/Advanced_Centre_for_Material_Science.png",
+    image: "/DST/Facilities/Advanced_Centre_for_Material_Science.png",
     link: "https://www.iitk.ac.in/acms/",
   },
 
@@ -80,8 +79,7 @@ const facilities = [
     title: "Central Experimental Animal Facility (CEAF)",
     description:
       "This facility is dedicated to housing, caring, and managing laboratory animals crucial for performing pre-clinical validation studies. This facility has multiple rooms with individually ventilated cage system for animal rearing. Several transgenic lines are maintained in the facility.",
-    image:
-      "/DST/Facilities/Central_Experimental_Animal_Facility_(CEAF).png",
+    image: "/DST/Facilities/Central_Experimental_Animal_Facility_(CEAF).png",
     link: "#",
   },
 
@@ -125,7 +123,6 @@ const DSTPrototype = () => {
                   items-center
                 `}
               >
-                {/* IMAGE LEFT */}
                 {index % 2 === 0 ? (
                   <>
                     <div>
@@ -160,7 +157,6 @@ const DSTPrototype = () => {
                   </>
                 ) : (
                   <>
-                    {/* TEXT LEFT */}
                     <div>
                       <h2 className="text-3xl font-bold text-slate-900">
                         <a
@@ -178,7 +174,6 @@ const DSTPrototype = () => {
                       </p>
                     </div>
 
-                    {/* IMAGE RIGHT */}
                     <div>
                       <img
                         src={facility.image}
@@ -195,7 +190,6 @@ const DSTPrototype = () => {
                 )}
               </div>
 
-              {/* SPACING */}
               <div className="h-24" />
             </div>
           ))}

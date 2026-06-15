@@ -80,7 +80,6 @@ const BoardMembers = () => {
         image="/DST/board-members_banner.png"
       />
 
-      {/* BOARD SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div
           className="
@@ -114,7 +113,6 @@ const BoardMembers = () => {
                 }
               `}
             >
-              {/* IMAGE */}
               <div className="flex justify-center">
                 <img
                   src={member.image}
@@ -130,7 +128,6 @@ const BoardMembers = () => {
                 />
               </div>
 
-              {/* NAME */}
               <h2
                 className="
                   mt-6
@@ -142,7 +139,6 @@ const BoardMembers = () => {
                 {member.name}
               </h2>
 
-              {/* ROLE */}
               <p
                 className="
                   mt-3
@@ -154,7 +150,6 @@ const BoardMembers = () => {
                 {member.role}
               </p>
 
-              {/* ORG */}
               <p
                 className="
                   mt-2
@@ -165,7 +160,6 @@ const BoardMembers = () => {
                 {member.org}
               </p>
 
-              {/* EMAIL */}
               <a
                 href={`mailto:${member.email}`}
                 className="

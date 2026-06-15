@@ -39,14 +39,14 @@ const DSTStartups = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* PAGE TITLE */}
+          
           <div className="mb-20">
             <div className="mb-6">
               <h2 className="text-4xl font-bold text-gray-900">
                 Our Startups
               </h2>
 
-              {/* BLUE LINE */}
+             
               <div className="w-20 h-1 bg-blue-600 mt-3 rounded-full"></div>
             </div>
 
@@ -55,7 +55,7 @@ const DSTStartups = () => {
             </p>
           </div>
 
-          {/* STARTUPS */}
+         
           <div className="space-y-24">
             {startups.map((startup, index) => (
               <div
@@ -68,7 +68,7 @@ const DSTStartups = () => {
                   items-center
                 "
               >
-                {/* IMAGE */}
+                
                 <div className={`${index % 2 !== 0 ? "lg:order-2" : ""}`}>
                   <img
                     src={startup.image}
@@ -86,20 +86,20 @@ const DSTStartups = () => {
                   />
                 </div>
 
-                {/* CONTENT */}
+               
                 <div className={`${index % 2 !== 0 ? "lg:order-1" : ""}`}>
                   
-                  {/* STARTUP TITLE */}
+                
                   <div className="mb-6">
                     <h3 className="text-3xl font-bold text-gray-900">
                       {startup.title}
                     </h3>
 
-                    {/* BLUE LINE */}
+                    
                     <div className="w-16 h-1 bg-blue-600 mt-3 rounded-full"></div>
                   </div>
 
-                  {/* DESCRIPTION */}
+                 
                   <p className="text-gray-700 text-lg leading-8">
                     {startup.description}
                   </p>

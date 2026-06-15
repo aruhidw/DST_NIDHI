@@ -39,7 +39,7 @@ const DSTHero = () => {
 
   return (
     <section className="relative w-full overflow-hidden">
-      {/* HERO HEIGHT */}
+     
       <div
         className="
           relative w-full
@@ -50,7 +50,7 @@ const DSTHero = () => {
           xl:h-[450px]
         "
       >
-        {/* CAROUSEL */}
+       
         <div
           className="
             flex h-full
@@ -75,7 +75,7 @@ const DSTHero = () => {
                   className="w-full h-full object-cover"
                 />
               ) : (
-                /* VIDEO */
+               
                 <video
                   autoPlay
                   muted
@@ -90,7 +90,7 @@ const DSTHero = () => {
                 </video>
               )}
 
-              {/* VIDEO TEXT */}
+              
               {slide.type === "video" && (
                 <div className="absolute inset-0 flex items-center justify-center text-center px-4">
                   <div>
@@ -143,7 +143,7 @@ const DSTHero = () => {
           ))}
         </div>
 
-        {/* LEFT BUTTON */}
+        
         <button
           onClick={prevSlide}
           className="
@@ -165,7 +165,7 @@ const DSTHero = () => {
           ❮
         </button>
 
-        {/* RIGHT BUTTON */}
+       
         <button
           onClick={nextSlide}
           className="
@@ -187,7 +187,7 @@ const DSTHero = () => {
           ❯
         </button>
 
-        {/* DOTS */}
+   
         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
           {slides.map((_, index) => (
             <button

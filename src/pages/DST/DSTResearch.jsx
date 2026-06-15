@@ -93,7 +93,7 @@ const DSTResearch = () => {
                 items-center
               `}
             >
-              {/* IMAGE */}
+           
               <div
                 className={`
                   ${index % 2 !== 0 ? "lg:order-2" : ""}
@@ -115,14 +115,14 @@ const DSTResearch = () => {
                 />
               </div>
 
-              {/* CONTENT */}
+              
               <div
                 className={`
                   ${index % 2 !== 0 ? "lg:order-1" : ""}
                   ${facility.fullWidth ? "lg:col-span-2" : ""}
                 `}
               >
-                {/* HEADING */}
+               
                 <div className="mb-6">
                   <a
                     href={facility.link}
@@ -140,11 +140,11 @@ const DSTResearch = () => {
                     {facility.title}
                   </a>
 
-                  {/* BLUE LINE */}
+                 
                   <div className="w-20 h-1 bg-blue-600 mt-3 rounded-full"></div>
                 </div>
 
-                {/* DESCRIPTION */}
+                
                 <p className="text-gray-700 text-lg leading-8">
                   {facility.description}
                 </p>

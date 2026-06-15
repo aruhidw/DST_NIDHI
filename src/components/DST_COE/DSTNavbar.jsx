@@ -1,5 +1,3 @@
-// src/components/DST_COE/DSTNavbar.jsx
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -13,11 +11,8 @@ const DSTNavbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-   <div className="w-full px-2 sm:px-3 lg:px-4">
-        {/* NAVBAR */}
+      <div className="w-full px-2 sm:px-3 lg:px-4">
         <div className="flex items-center justify-between h-16 sm:h-20 lg:h-24">
-          
-          {/* LOGOS */}
           <div
             className="
               flex items-center
@@ -26,7 +21,6 @@ const DSTNavbar = () => {
               pl-1
             "
           >
-            {/* MEDTECH LOGO */}
             <Link to="/COEs/DST/Home">
               <img
                 src="/DST/MedTech_CoE_logo.png"
@@ -43,7 +37,6 @@ const DSTNavbar = () => {
               />
             </Link>
 
-            {/* DST LOGO */}
             <Link to="/DST">
               <img
                 src="/DST/dst-logo.png"
@@ -60,10 +53,7 @@ const DSTNavbar = () => {
               />
             </Link>
 
-            {/* SIIC LOGO */}
-            <Link
-             to={"/"}
-            >
+            <Link to={"/"}>
               <img
                 src="/DST/siic_logo_.png"
                 alt="siic"
@@ -80,10 +70,7 @@ const DSTNavbar = () => {
             </Link>
           </div>
 
-          {/* DESKTOP MENU */}
           <div className="hidden xl:flex items-center gap-6 2xl:gap-8 font-medium text-gray-700 text-sm">
-            
-            {/* HOME */}
             <Link
               to="/COEs/DST/Home"
               className="hover:text-blue-600 transition"
@@ -91,7 +78,6 @@ const DSTNavbar = () => {
               Home
             </Link>
 
-            {/* ABOUT */}
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-blue-600">
                 About <ChevronDown size={16} />
@@ -121,7 +107,6 @@ const DSTNavbar = () => {
               </div>
             </div>
 
-            {/* FACILITIES */}
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-blue-600">
                 Facilities <ChevronDown size={16} />
@@ -165,7 +150,6 @@ const DSTNavbar = () => {
               Success Stories
             </Link>
 
-            {/* NEWS */}
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-blue-600">
                 News & Events <ChevronDown size={16} />
@@ -189,17 +173,12 @@ const DSTNavbar = () => {
             </div>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
-          <button
-            className="xl:hidden"
-            onClick={() => setMobileOpen(true)}
-          >
+          <button className="xl:hidden" onClick={() => setMobileOpen(true)}>
             <Menu size={28} />
           </button>
         </div>
       </div>
 
-      {/* MOBILE SIDEBAR */}
       <div
         className={`
           fixed top-0 right-0 h-full w-[280px]
@@ -208,7 +187,6 @@ const DSTNavbar = () => {
           ${mobileOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        {/* TOP */}
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="font-bold text-lg">Menu</h2>
 
@@ -217,10 +195,7 @@ const DSTNavbar = () => {
           </button>
         </div>
 
-        {/* LINKS */}
         <div className="flex flex-col p-4 text-gray-700">
-          
-          {/* HOME */}
           <Link
             to="/DST"
             className="py-3 border-b"
@@ -229,7 +204,6 @@ const DSTNavbar = () => {
             Home
           </Link>
 
-          {/* ABOUT */}
           <button
             onClick={() => setAboutOpen(!aboutOpen)}
             className="flex justify-between items-center py-3 border-b"
@@ -266,7 +240,6 @@ const DSTNavbar = () => {
             </div>
           )}
 
-          {/* FACILITIES */}
           <button
             onClick={() => setFacilityOpen(!facilityOpen)}
             className="flex justify-between items-center py-3 border-b"
@@ -319,7 +292,6 @@ const DSTNavbar = () => {
             Success Stories
           </Link>
 
-          {/* NEWS */}
           <button
             onClick={() => setNewsOpen(!newsOpen)}
             className="flex justify-between items-center py-3 border-b"
@@ -350,7 +322,6 @@ const DSTNavbar = () => {
         </div>
       </div>
 
-      {/* BACKDROP */}
       {mobileOpen && (
         <div
           className="fixed inset-0 bg-black/40 z-50"

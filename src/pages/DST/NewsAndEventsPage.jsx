@@ -4,7 +4,7 @@ import DSTNavbar from "../../components/DST_COE/DSTNavbar";
 import PageBanner from "../../components/DST_COE/PageBanner";
 import DSTFooter from "../../components/DST_COE/DSTFooter";
 
-// Explicit array mapping all 4 required dynamic carousel media references
+
 const slides = [
   { type: "image", src: "/DST/past_banner1.png" },
   { type: "image", src: "/DST/past_banner2.png" },
@@ -12,7 +12,7 @@ const slides = [
   { type: "image", src: "/DST/past_banner4.png" },
 ];
 
-// Clean structured array of your exact 13 page event rows
+
 const pastEventsData = [
   {
     title: "Talk on “Entrepreneurs Paradise Synergy between Medicine and Engineering- Where are we heading?”",
@@ -97,7 +97,7 @@ const pastEventsData = [
 const NewsAndEventsPage = () => {
   const [current, setCurrent] = useState(0);
 
-  // Automates slide transitions over a 5000ms loop
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -118,7 +118,7 @@ const NewsAndEventsPage = () => {
     <div className="bg-white min-h-screen overflow-x-hidden">
       <DSTNavbar />
 
-      {/* Dynamic 4-Image Adaptive Carousel Hero Section */}
+  
       <section className="relative w-full overflow-hidden">
         <div
           className="
@@ -130,7 +130,7 @@ const NewsAndEventsPage = () => {
             xl:h-[480px]
           "
         >
-          {/* Hardware Accelerated Slider Container */}
+         
           <div
             className="flex h-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
@@ -146,7 +146,7 @@ const NewsAndEventsPage = () => {
             ))}
           </div>
 
-          {/* Left Navigation Arrow */}
+         
           <button
             onClick={prevSlide}
             className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full z-10 flex items-center justify-center transition"
@@ -155,7 +155,7 @@ const NewsAndEventsPage = () => {
             ❮
           </button>
 
-          {/* Right Navigation Arrow */}
+         
           <button
             onClick={nextSlide}
             className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full z-10 flex items-center justify-center transition"
@@ -164,7 +164,7 @@ const NewsAndEventsPage = () => {
             ❯
           </button>
 
-          {/* Pagination Navigation Dots */}
+         
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
             {slides.map((_, index) => (
               <button
@@ -180,56 +180,7 @@ const NewsAndEventsPage = () => {
         </div>
       </section>
 
-      {/* Navigation Cards Container Selection Grid */}
-      {/* <section className="py-16 bg-gray-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-10"> */}
-            
-            {/* Link Routing Node to Upcoming Events subpage */}
-            {/* <Link to="/upcoming-events">
-              <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:scale-[1.02] transition duration-500 cursor-pointer h-full flex flex-col">
-                <img
-                  src="upcoming_banner.png"
-                  alt="Upcoming Events"
-                  className="w-full h-[320px] object-cover"
-                />
-                <div className="p-8 flex-grow">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    Upcoming Events
-                  </h2>
-                  <p className="text-gray-600 text-lg leading-8">
-                    Explore upcoming workshops, talks, conferences, and innovation events
-                    organized under DST NIDHI MedTech CoE.
-                  </p>
-                </div>
-              </div>
-            </Link> */}
-
-            {/* Link Routing Node to Past Events archive subpage */}
-            {/* <Link to="/past-events"> */}
-              {/* <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:scale-[1.02] transition duration-500 cursor-pointer h-full flex flex-col">
-                <img
-                  src="past_banner1.png"
-                  alt="Past Events"
-                  className="w-full h-[320px] object-cover"
-                />
-                <div className="p-8 flex-grow">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    Past Events
-                  </h2>
-                  <p className="text-gray-600 text-lg leading-8">
-                    Browse previous seminars, outreach activities, workshops, MoU signings,
-                    and MedTech discussions.
-                  </p>
-                </div>
-              </div>
-            </Link>
-
-          </div>
-        </div> */}
-      {/* </section> */}
-
-      {/* Complete Historical Event Rows Segment */}
+     
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-12 text-center tracking-tight">
@@ -241,7 +192,7 @@ const NewsAndEventsPage = () => {
                 key={index} 
                 className="flex flex-col md:flex-row bg-white border border-gray-100 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                {/* Responsive Image Wrapper Container */}
+               
                 <div className="w-full md:w-[35%] min-h-[240px] md:min-h-none overflow-hidden bg-gray-50 flex-shrink-0">
                   <img 
                     src={event.image} 
@@ -251,7 +202,7 @@ const NewsAndEventsPage = () => {
                   />
                 </div>
 
-                {/* Text Layout Segment Container */}
+              
                 <div className="w-full md:w-[65%] p-6 md:p-8 flex flex-col justify-center">
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 tracking-tight leading-snug mb-2">
                     {event.title}
