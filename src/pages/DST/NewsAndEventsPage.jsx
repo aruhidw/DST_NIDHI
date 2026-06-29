@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import DSTNavbar from "../../components/DST_COE/DSTNavbar";
 import PageBanner from "../../components/DST_COE/PageBanner";
 import DSTFooter from "../../components/DST_COE/DSTFooter";
@@ -100,11 +99,10 @@ const NewsAndEventsPage = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrent((prev) => (prev + 1) % slides.length);
     }, 5000);
-
     return () => clearInterval(interval);
-  }, [current]);
+  }, []);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % slides.length);

@@ -7,7 +7,7 @@ const Cards = ({ icon, title, description }) => {
       >
         <div className="relative flex-shrink-0">
           <div className="relative rounded-xl flex items-center justify-center ">
-            <div className="text-7xl text-blue-700 bg-gradient-to-r from  blue-800 to  blue-600 drop-shadow-lg flex items-center justify-center">
+            <div className="text-7xl text-blue-700 drop-shadow-lg flex items-center justify-center">
               {icon}
             </div>
           </div>

@@ -14,7 +14,7 @@ const facilities = [
   {
     title: "Tinkering Labs",
     description:
-      "Tinkering laboratory is a platform for creative minds to come out of their ‘Think Space’ to hands-on ‘Tinker Space’, to transform their ideas into real-time engineering objects, and eventually to products and patents.",
+      "Tinkering laboratory is a platform for creative minds to come out of their 'Think Space' to hands-on 'Tinker Space', to transform their ideas into real-time engineering objects, and eventually to products and patents.",
     image: "/DST/Facilities/Tinkering_Labs.png",
     link: "http://imlab.in/laboratory/tinkering-lab/",
   },
@@ -103,38 +103,18 @@ const DSTPrototype = () => {
         className="bg-black/50"
       />
 
-      <section
-        className="py-16"
-        style={{
-          backgroundImage: "url('/DST/bg-img-3.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {facilities.map((facility, index) => (
             <div key={index}>
-              <div
-                className={`
-                  grid 
-                  grid-cols-1 
-                  md:grid-cols-2 
-                  gap-10 
-                  items-center
-                `}
-              >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 {index % 2 === 0 ? (
                   <>
                     <div>
                       <img
                         src={facility.image}
                         alt={facility.title}
-                        className="
-                          w-full
-                          rounded-2xl
-                          shadow-xl
-                          object-cover
-                        "
+                        className="w-full rounded-2xl shadow-xl object-cover"
                       />
                     </div>
 
@@ -178,12 +158,7 @@ const DSTPrototype = () => {
                       <img
                         src={facility.image}
                         alt={facility.title}
-                        className="
-                          w-full
-                          rounded-2xl
-                          shadow-xl
-                          object-cover
-                        "
+                        className="w-full rounded-2xl shadow-xl object-cover"
                       />
                     </div>
                   </>
