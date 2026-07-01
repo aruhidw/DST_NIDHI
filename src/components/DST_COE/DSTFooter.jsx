@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -22,20 +23,14 @@ const DSTFooter = () => {
                   inline-flex
                   items-center
                   gap-2
-                  
                   border border-blue-400
                   rounded-full
-
                   px-6 py-3
-
                   text-sm sm:text-base
                   font-medium
-
                   text-white
-
                   hover:bg-blue-600
                   hover:border-blue-600
-
                   transition-all duration-300
                 "
               >
@@ -50,52 +45,28 @@ const DSTFooter = () => {
               </h3>
 
               <div className="flex flex-col gap-3 text-gray-300 text-sm sm:text-base">
-                <a href="/COEs/DST" className="hover:text-white transition">
+                <Link to="/COEs/DST/Home" className="hover:text-white transition">
                   Home
-                </a>
+                </Link>
 
-                <a
-                  href="/COEs/DST/about"
-                  className="hover:text-white transition"
-                >
+                <Link to="/COEs/DST/about" className="hover:text-white transition">
                   About Us
-                </a>
+                </Link>
 
-                <a
-                  href="/COEs/DST/startups"
-                  className="hover:text-white transition"
-                >
+                <Link to="/COEs/DST/startups" className="hover:text-white transition">
                   Startups
-                </a>
+                </Link>
 
-                <a
-                  href="/COEs/DST/success"
-                  className="hover:text-white transition"
-                >
+                <Link to="/COEs/DST/stories" className="hover:text-white transition">
                   Success Stories
-                </a>
-
-                <a
-                  href="/COEs/DST/contact"
-                  className="hover:text-white transition"
-                >
-                  Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="flex flex-col justify-between">
             <div>
-              <p
-                className="
-                  text-gray-300
-                  text-sm
-                  sm:text-base
-                  md:text-lg
-                  leading-7
-                "
-              >
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-7">
                 Diamond Jubilee Academia Complex (DJAC),
                 <br />
                 Near New Core Labs, IIT Kanpur
@@ -106,11 +77,9 @@ const DSTFooter = () => {
                 className="
                   inline-block
                   mt-4
-
                   text-blue-300
                   text-sm
                   sm:text-base
-
                   hover:text-white
                   transition
                 "
@@ -127,19 +96,12 @@ const DSTFooter = () => {
                     h-10 w-10
                     rounded-full
                     border border-white
-
-                    flex
-                    items-center
-                    justify-center
-
+                    flex items-center justify-center
                     text-white
-
                     hover:bg-[#1877F2]
                     hover:text-white
-
                     shadow-md
                     hover:scale-110
-
                     transition-all duration-300
                   "
                 >
@@ -154,19 +116,12 @@ const DSTFooter = () => {
                     h-10 w-10
                     rounded-full
                     border border-white
-
-                    flex
-                    items-center
-                    justify-center
-
+                    flex items-center justify-center
                     text-white
-
                     hover:bg-[#FF0000]
                     hover:text-white
-
                     shadow-md
                     hover:scale-110
-
                     transition-all duration-300
                   "
                 >
@@ -181,16 +136,10 @@ const DSTFooter = () => {
                     h-10 w-10
                     rounded-full
                     border border-white
-
-                    flex
-                    items-center
-                    justify-center
-
+                    flex items-center justify-center
                     text-white
-
                     shadow-md
                     hover:scale-110
-
                     transition-all duration-300
                   "
                   onMouseEnter={(e) => {
@@ -214,19 +163,12 @@ const DSTFooter = () => {
                     h-10 w-10
                     rounded-full
                     border border-white
-
-                    flex
-                    items-center
-                    justify-center
-
+                    flex items-center justify-center
                     text-white
-
                     hover:bg-[#0A66C2]
                     hover:text-white
-
                     shadow-md
                     hover:scale-110
-
                     transition-all duration-300
                   "
                 >
@@ -238,19 +180,7 @@ const DSTFooter = () => {
         </div>
       </div>
 
-      <div
-        className="
-          border-t border-white/10
-
-          py-5 px-4
-
-          text-center
-
-          text-xs sm:text-sm
-
-          text-gray-400
-        "
-      >
+      <div className="border-t border-white/10 py-5 px-4 text-center text-xs sm:text-sm text-gray-400">
         © 2024 Nidhi DST CoE Powered by SIIC
         <span className="ml-2 text-gray-500">Powered by SGCC</span>
       </div>

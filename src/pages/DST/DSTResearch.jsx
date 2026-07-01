@@ -5,7 +5,6 @@ import DSTFooter from "../../components/DST_COE/DSTFooter";
 const researchFacilities = [
   {
     title: "Bio-incubator at SIIC IIT Kanpur",
-    image: "/DST/Facilities/Bio_incubator.png",
     link: "https://www.iitk.ac.in/birac/about.php",
     description:
       "Over the years, SIIC IIT Kanpur has built a healthy Ecosystem conducive for Innovation and Incubation system with financial support from multiple government bodies including Department of Science and Technology, Department of Biotechnology.",
@@ -74,55 +73,37 @@ const DSTResearch = () => {
         className="bg-black/50"
       />
 
-      <section
-        className="py-20 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/DST/bg-img-3.png')",
-        }}
-      >
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
-
           {researchFacilities.map((facility, index) => (
             <div
               key={index}
-              className={`
-                grid
-                grid-cols-1
-                lg:grid-cols-2
-                gap-14
-                items-center
-              `}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center"
             >
-           
-              <div
-                className={`
-                  ${index % 2 !== 0 ? "lg:order-2" : ""}
-                  ${facility.fullWidth ? "hidden" : ""}
-                `}
-              >
-                <img
-                  src={facility.image}
-                  alt={facility.title}
-                  className="
-                    w-full
-                    rounded-3xl
-                    shadow-2xl
-                    object-cover
-                    hover:scale-[1.02]
-                    transition-all
-                    duration-500
-                  "
-                />
-              </div>
+              {!facility.fullWidth && (
+                <div className={index % 2 !== 0 ? "lg:order-2" : ""}>
+                  <img
+                    src={facility.image}
+                    alt={facility.title}
+                    className="
+                      w-full
+                      rounded-3xl
+                      shadow-2xl
+                      object-cover
+                      hover:scale-[1.02]
+                      transition-all
+                      duration-500
+                    "
+                  />
+                </div>
+              )}
 
-              
               <div
                 className={`
                   ${index % 2 !== 0 ? "lg:order-1" : ""}
                   ${facility.fullWidth ? "lg:col-span-2" : ""}
                 `}
               >
-               
                 <div className="mb-6">
                   <a
                     href={facility.link}
@@ -139,12 +120,9 @@ const DSTResearch = () => {
                   >
                     {facility.title}
                   </a>
-
-                 
-                  <div className="w-20 h-1 bg-blue-600 mt-3 rounded-full"></div>
+                  <div className="w-20 h-1 bg-blue-600 mt-3 rounded-full" />
                 </div>
 
-                
                 <p className="text-gray-700 text-lg leading-8">
                   {facility.description}
                 </p>
