@@ -13,7 +13,7 @@ const DSTUpcomingEvents = () => {
 
       <PageBanner
         title="Upcoming Events"
-        image="/DST/upcoming_banner.png"
+        image="/DST/startups_banner.png"
         className="bg-black/60"
       />
 

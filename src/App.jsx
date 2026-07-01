@@ -1,12 +1,5 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
-// Layout Components
-import DSTNavbar from "./components/DST_COE/DSTNavbar";
-import DSTFooter from "./components/DST_COE/DSTFooter";
-import DSTHeader from "./components/DST_COE/DSTHeader";
-
-// Pages
 import DSTHome from "./pages/DST/DSTHome";
 import DSTAbout from "./pages/DST/DSTAbout";
 import BoardMembers from "./pages/DST/boardMembers";
@@ -22,15 +15,10 @@ import NewsAndEventsPage from "./pages/DST/NewsAndEventsPage";
 function App() {
   return (
     <Router>
-      {/* Global Layout Components */}
-    
-
       <main className="min-h-screen">
         <Routes>
-          {/* --- BASE REDIRECT --- */}
           <Route path="/" element={<Navigate to="/COEs/DST/Home" replace />} />
-          
-          {/* --- OFFICIAL ROUTES (/COEs/DST/...) --- */}
+
           <Route path="/COEs/DST/Home" element={<DSTHome />} />
           <Route path="/COEs/DST/about" element={<DSTAbout />} />
           <Route path="/COEs/DST/board-members" element={<BoardMembers />} />
@@ -43,8 +31,6 @@ function App() {
           <Route path="/COEs/DST/mentors" element={<Mentors />} />
           <Route path="/COEs/DST/news-and-events" element={<NewsAndEventsPage />} />
 
-          {/* --- SHORTCUT FALLBACKS (/DST/...) --- */}
-          {/* This catches the exact error you just had and safely moves the user over! */}
           <Route path="/DST" element={<Navigate to="/COEs/DST/Home" replace />} />
           <Route path="/DST/about" element={<Navigate to="/COEs/DST/about" replace />} />
           <Route path="/DST/board" element={<Navigate to="/COEs/DST/board-members" replace />} />
@@ -60,13 +46,9 @@ function App() {
           <Route path="/DST/upcoming-events" element={<Navigate to="/COEs/DST/upcoming-events" replace />} />
           <Route path="/DST/past" element={<Navigate to="/COEs/DST/news-and-events" replace />} />
 
-          {/* --- CATCH-ALL 404 REDIRECT --- */}
-          {/* If they type absolutely anything else wrong, send them back safely to home */}
           <Route path="*" element={<Navigate to="/COEs/DST/Home" replace />} />
         </Routes>
       </main>
-
-      
     </Router>
   );
 }
